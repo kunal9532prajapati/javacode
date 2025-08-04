@@ -247,41 +247,117 @@
 //         System.out.println(sum);
 //     }
 // }
-import java.util.Scanner;
-class Dsa {
-    public static void main(String[] args) {
-        System.out.println("Enter a number");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int mid = n/2+1;
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=n; j++){
-                if(i==mid || j==mid)
-                    System.out.print("* ");
-                else
-                    System.out.print("  ");
-            }
-            System.out.println();
-        }
-    }
-}
+
+//pattern of cross
 
 // import java.util.Scanner;
 // class Dsa {
 //     public static void main(String[] args) {
 //         System.out.println("Enter a number");
 //         Scanner sc = new Scanner(System.in);
-//         int a = sc.nextInt();
+//         int n = sc.nextInt();
+//         int mid = n/2+1;
+//         for(int i=1; i<=n; i++){
+//             for(int j=1; j<=n; j++){
+//                 if(i==mid || j==mid)
+//                     System.out.print("* ");
+//                 else
+//                     System.out.print("  ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// class Dsa {
+//     public static void main(String[] args) {
+//         System.out.print("Enter a number: ");
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         //int sum=0;
+
+//         for(int i=1; i<=n; i++){
+//              for(int j=1; j<=n; j++){
+//                 //sum = i+j;
+//                 if(i+j >n){
+//                     System.out.print("*");
+//                 }else{ 
+//                     System.out.print(" ");
+//                 }
+//             }
+//             System.out.println();
+//         }
+        
+//     }
+// }
+//       A 
+//       1 2 
+//       A B C 
+//       1 2 3 4 
+//       A B C D E 
+
+// import java.util.Scanner;
+// class Dsa {
+//     public static void main(String[] args) {
+//         System.out.print("Enter a number: ");
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         for(int i=1; i<=n; i++){
+//             for(int j=1; j<=i; j++){
+//                 if(i%2!=0){
+//                     System.out.print((char)(65 + j-1)+ " ");
+//                 } else {
+//                     System.out.print(j + " ");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+    // 1 1 1 1 1 1 1 
+    // 2 2 2 2 2 2 
+    // 3 3 3 3 3 
+    // 4 4 4 4 
+    // 5 5 5 
+    // 6 6 
+    // 7  
+
+// import java.util.Scanner;
+// class Dsa {
+//     public static void main(String[] args) {
+//         System.out.print("Enter a number: ");
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         for (int i = 1; i<=n;i++) {
+//             for (int j = n; j >= i; j--) {
+//                 System.out.print(i + " ");
+//             }
+//             System.out.println();
+            
+//         }
 //     }
 // }
 
 
 
-
-
-
-
-
+class Dsa{ 
+    public static void main(String[]args){
+        int n = 4;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print("  ");
+            }
+            for(int j=1; j<=i; j++){
+                System.out.print("*"+" ");
+            }
+            System.out.println(); 
+        }       
+    }
+}
 
 
 

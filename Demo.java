@@ -1,35 +1,36 @@
 
+import java.util.Scanner;   
 
 
+// This code demonstrates method overloading in Java.
+// Method overloading allows multiple methods with the same name to exist in a class,
 
-
-/* 
-public class Demo{
-    public static int sum(int a, int b) {
-        return a + b;
-    }
-    public static int sum(int a, int b, int c) {
-        return a + b + c;
-    }
-    public static double sum(double  a, double b) {
-        return a + b;
-    }
-}
+// public class Demo{
+//     public static int sum(int a, int b) {
+//         return a + b;
+//     }
+//     public static int sum(int a, int b, int c) {
+//         return a + b + c;
+//     }
+//     public static double sum(double  a, double b) {
+//         return a + b;
+//     }
+// }
     
-class codes{
-    public static void main(String[] args) {
+// class codes{
+//     public static void main(String[] args) {
        
-        Demo cod = new Demo();
-        int result1 = cod.sum(5, 8);
-        int result2 = cod.sum(10, 5, 7);
-        double result3 = cod.sum(5.5, 8.2);
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
-    }
+//         Demo cod = new Demo();
+//         int result1 = cod.sum(5, 8);
+//         int result2 = cod.sum(10, 5, 7);
+//         double result3 = cod.sum(5.5, 8.2);
+//         System.out.println(result1);
+//         System.out.println(result2);
+//         System.out.println(result3);
+//     }
     
-}
-*/
+// }
+
 
 // This code demonstrates method overloading in Java.
 // The `sum` method is overloaded to handle different numbers of parameters and types.
@@ -41,84 +42,89 @@ class codes{
 // 13.7
 // This shows how Java allows methods with the same name to coexist as long as their parameter lists
 
-/* 
-public class Demo{
-    public static void main(String[] args) {
-        int age;
-        //int result=0;
-        System.out.println("Enter your age: ");
-        Scanner sc = new Scanner(System.in);
-        age= sc.nextInt();
-        switch(age){
-            case 18:      
-                System.out.println("U can vote");
+ 
+// public class Demo{
+//     public static void main(String[] args) {
+//         int age;
+//         //int result=0;
+//         System.out.println("Enter your age: ");
+//         Scanner sc = new Scanner(System.in);
+//         age= sc.nextInt();
+//         switch(age){
+//             case 18:      
+//                 System.out.println("U can vote");
                 
-                break;
-            case 60:
+//                 break;
+//             case 60:
                 
-                System.out.println("U r getting old");
-                break;
-            case 80 :
+//                 System.out.println("U r getting Retirement");
+//                 break;
+//             case 80 :
                 
-                System.out.println("bed rest");
-                break; 
-            default:
-                System.out.println("Error, plese enter valid age");
-                break;
-        }     
-    }
-}
-public class Demo {
-    public static void main(String[] args) {
-        String name = new String("kunal");
-        System.out.println("Hello " + name);
-        System.out.println(name.length());
-        System.out.println(name.toUpperCase());
-        System.out.println(name.charAt(1));
+//                 System.out.println(" Take Bed rest");
+//                 break; 
+//             default:
+//                 System.out.println("Error, plese enter valid age");
+//                 break;
+//         }     
+//     }
+// }
 
-    }
-}
-    //////////////////////          ///////
-class kp 
 
-{
-    static String name ;
-    String brand;
-    int price;
-    public void jp()
-    {
-        System.out.println(name);
-        System.out.println(brand);
-        System.out.println(price);
-    }
+
+
+
+// public class Demo {
+//     public static void main(String[] args) {
+//         String name = new String("kunal");
+//         System.out.println("Hello " + name);
+//         System.out.println(name.length());
+//         System.out.println(name.toUpperCase());
+//         System.out.println(name.charAt(1));
+
+//     }
+// }
+ //////////////////////          ///////
+// class kp 
+
+// {
+//     static String name ;
+//     String brand;
+//     int price;
+//     public void jp()
+//     {
+//         System.out.println(name);
+//         System.out.println(brand);
+//         System.out.println(price);
+//     }
     
-}
-public class Demo 
-{
-    public static void main(String[] args) 
-    {
-       kp str = new kp();
-       //str.name = "smartphone";
-       str.brand = "apple";
-       str.price = 50000;
+// }
+// public class Demo 
+// {
+//     public static void main(String[] args) 
+//     {
+//        kp str = new kp();
+//        //str.name = "smartphone";
+//        str.brand = "apple";
+//        str.price = 50000;
        
-       kp str1 = new kp();
-       //str1.name = "smartphone";
-       str1.brand = "Moto";
-       str1.price = 20000;
+//        kp str1 = new kp();
+//        //str1.name = "smartphone";
+//        str1.brand = "Moto";
+//        str1.price = 20000;
        
-       kp str2 = new kp();
-       str2.name = "smartphone";
-       str2.brand = "lenvo";
-       str2.price = 10000;
+//        kp str2 = new kp();
+//        str2.name = "smartphone";
+//        str2.brand = "lenvo";
+//        str2.price = 10000;
        
-       str.jp();
-       str1.jp();
-       str2.jp();
-    }
-}
+//        str.jp();
+//        str1.jp();
+//        str2.jp();
+//     }
+// }
 
-*/
+
 
 //Example of static and instance variables in Java
 //Static variables are shared among all instances of a class, while instance variables are unique to each instance.
@@ -527,37 +533,37 @@ public class Demo {
 // }
 
 
-class C implements A, ccc {
-    public void show() {
-        System.out.println("Show from " + age  );
-    }
+// class C implements A, ccc {
+//     public void show() {
+//         System.out.println("Show from " + age  );
+//     }
 
-    public void display() {
-        System.out.println("Display from B");
-    }
-    public void cMethod(){
-        System.out.println("C method from interface C");
-    }
- }
-class Demo {
-    public static void main(String[] args) {
-        A obj;
-        obj = new C();
-        obj.show();
-              // Calls show from A
-        // obj.display();   // Calls display from B
-        // obj.cMethod();   // Calls cMethod from interface C
-        //ccc obj2 = new ccc();
-        B obj2 = new C();
+//     public void display() {
+//         System.out.println("Display from B");
+//     }
+//     public void cMethod(){
+//         System.out.println("C method from interface C");
+//     }
+//  }
+// class Demo {
+//     public static void main(String[] args) {
+//         A obj;
+//         obj = new C();
+//         obj.show();
+//               // Calls show from A
+//         // obj.display();   // Calls display from B
+//         // obj.cMethod();   // Calls cMethod from interface C
+//         //ccc obj2 = new ccc();
+//         B obj2 = new C();
 
-        obj2.display();  // Calls display from B
+//         obj2.display();  // Calls display from B
 
-        ccc obj3 = new C();
+//         ccc obj3 = new C();
 
-        obj3.cMethod();  // Calls cMethod from interface C
-        obj3.display();
-    }
-}
+//         obj3.cMethod();  // Calls cMethod from interface C
+//         obj3.display();
+//     }
+// }
 
 
 // import java.util.Scanner;
@@ -681,19 +687,22 @@ class Demo {
 // 		while(num != 0) {
 //             int lastDigit = num % 10; // Get the last digit
 //             sum += lastDigit; // Add it to the sum
-//             num /= 10; // Remove the last digit from the number
-            
-            
+//             num /= 10; // Remove the last digit from the number                       
 //         }
 // 		System.out.println(sum);	
 // 	}
 // }
-// 	public static void main(String args[]) {
-// 		 Scanner sc = new Scanner(System.in);
-//          System.out.println("Enter a number : i  ");
-// 		 int ii = sc.nextInt();
-//          System.out.println("Enter a number : j  ");
-//          int jj = sc.nextInt();
+
+
+//import java.util.Scanner;
+// class Demo {
+//     public static void main(String args[]) {
+// 	    Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter a number : i  ");
+// 	    int ii = sc.nextInt();
+//         String name= sc.next();
+//         System.out.println("Enter a number : j  "+ name);
+//         //  int jj = sc.nextInt();
 //         // int num = sc.nextInt();
 //         // int product=1;
 //         // while(num>=1){
@@ -709,13 +718,14 @@ class Demo {
 // 		// System.out.println(product);
 //         // System.out.println("The product of the digits is: " );
 
-//         ------------------------------------
-//         for(int i =1; i <= ii; i++) {
-//             for (int j = 1; j <= jj; j--) {
-//                 System.out.print("* "); // Print the product in a tabular format
-//             }
-//             System.out.println(); // Move to the next line after each row
-//         }
+//         //------------------------------------
+//         // for(int i =1; i <= ii; i++) {
+//         //     for (int j = 1; j <= jj; j--) {
+//         //         System.out.print("* "); // Print the product in a tabular format
+//         //     }
+//         //     System.out.println(); // Move to the next line after each row
+//         // }
 // 	}
-//}
+// }
+
 
