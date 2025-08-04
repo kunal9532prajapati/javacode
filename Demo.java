@@ -527,36 +527,37 @@ public class Demo {
 // }
 
 
-// class C implements A, ccc {
-//     public void show() {
-//         System.out.println("Show from " + age  );
-//     }
+class C implements A, ccc {
+    public void show() {
+        System.out.println("Show from " + age  );
+    }
 
-//     public void display() {
-//         System.out.println("Display from B");
-//     }
-//     public void cMethod(){
-//         System.out.println("C method from interface C");
-//     }
+    public void display() {
+        System.out.println("Display from B");
+    }
+    public void cMethod(){
+        System.out.println("C method from interface C");
+    }
+ }
+class Demo {
+    public static void main(String[] args) {
+        A obj;
+        obj = new C();
+        obj.show();
+              // Calls show from A
+        // obj.display();   // Calls display from B
+        // obj.cMethod();   // Calls cMethod from interface C
+        //ccc obj2 = new ccc();
+        B obj2 = new C();
 
+        obj2.display();  // Calls display from B
 
-// }
-// class Demo {
-//     public static void main(String[] args) {
-//         A obj;
-//         obj = new C();
-//         obj.show();
-//               // Calls show from A
-//         // obj.display();   // Calls display from B
-//         // obj.cMethod();   // Calls cMethod from interface C
-//         //ccc obj2 = new ccc();
-//         B obj2 = new C();
-//         obj2.display();  // Calls display from B
-//         ccc obj3 = new C();
-//         obj3.cMethod();  // Calls cMethod from interface C
+        ccc obj3 = new C();
 
-//     }
-// }
+        obj3.cMethod();  // Calls cMethod from interface C
+        obj3.display();
+    }
+}
 
 
 // import java.util.Scanner;
