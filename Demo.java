@@ -729,3 +729,34 @@ public class Demo {
 // }
 
 
+// class Demo{
+//     public static void main(String[] args) {   
+
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a number: ");
+//         int num = sc.nextInt();
+//         int value=1;
+//         for(int i =1; i<=num;i++){
+//             value*=i;
+            
+//         }
+//         System.out.print(value + " "); // Print the product in a tabular format
+
+//     }
+        
+// }
+class Demo{
+    public static void main(String[] args) {   
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int i = 1;
+        int value = 0;
+        while( num!=0) {
+            value = num%10; // Get the last digit
+            value=num;
+            
+             
+    }
+}
