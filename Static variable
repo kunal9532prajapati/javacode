@@ -1,0 +1,9 @@
+class Test {
+    static int x = 10; // static variable
+
+    public static void main(String[] args) {
+        System.out.println(Test.x); // Access without object
+        Test.x = 20; // Change value
+        System.out.println(Test.x);
+    }
+}
