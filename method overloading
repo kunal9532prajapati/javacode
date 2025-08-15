@@ -1,26 +1,32 @@
-class MathOperations {
-    // Method 1: add two integers
-    int add(int a, int b) {
-        return a + b;
-    }
+// This code demonstrates method overloading in Java.
+// Method overloading allows multiple methods with the same name to exist in a class,
 
-    // Method 2: add three integers
-    int add(int a, int b, int c) {
-        return a + b + c;
+public class Demo{
+    public static int sum(int a, int b) {    
+        return a + b;                      //Method 1
     }
-
-    // Method 3: add two doubles
-    double add(double a, double b) {
-        return a + b;
+    public static int sum(int a, int b, int c) {
+        return a + b + c;                  //Method 2
+    }
+    public static double sum(double  a, double b) {
+        return a + b;                      //Method 3
     }
 }
-
-class Main {
+    
+class codes{
     public static void main(String[] args) {
-        MathOperations m = new MathOperations();
+       
+        Demo cod = new Demo();    //Object
 
-        System.out.println(m.add(5, 10));        // 15
-        System.out.println(m.add(5, 10, 15));    // 30
-        System.out.println(m.add(5.5, 2.5));     // 8.0
+        int result1 = cod.sum(5, 8); 
+
+        int result2 = cod.sum(10, 5, 7);
+
+        double result3 = cod.sum(5.5, 8.2);
+
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println(result3);
     }
+    
 }
