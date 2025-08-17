@@ -209,7 +209,7 @@ public class Demo {
         Demo d1 = new Demo();  // Block + Constructor
         Demo d2 = new Demo();  // Block + Constructor again
     }
-}
+} 
 */
 
 // Encapsulation in Java is a fundamental concept that restricts direct access to an object's data and methods.
@@ -757,6 +757,6 @@ class Demo{
             value = num%10; // Get the last digit
             value=num;
             
-             
+        }     
     }
 }

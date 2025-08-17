@@ -1,4 +1,6 @@
-public class SwitchCase{
+//package Switchcase;
+import java.util.Scanner;
+class SwitchCase{
     public static void main(String[] args) {
 
         int age;
