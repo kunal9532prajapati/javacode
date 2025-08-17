@@ -1,0 +1,36 @@
+abstract class Animal {
+    // abstract method
+    abstract void sound();
+
+    // concrete method
+    void eat() {
+        System.out.println("This animal eats food");
+    }
+}
+
+// Dog must provide implementation of abstract method
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Cat also provides its own implementation
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Animal a = new Animal(); ❌ Not allowed
+
+        Animal dog = new Dog();
+        dog.sound();  // Dog barks
+        dog.eat();    // This animal eats food
+
+        Animal cat = new Cat();
+        cat.sound();  // Cat meows
+    }
+}
