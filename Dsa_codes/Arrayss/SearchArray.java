@@ -10,10 +10,10 @@ public class SearchArray {
             if(arr[i]==45){//check
                 
                 flag = true;
-                break;// Getting one similer element loop break not search for other.
+                break;// After Getting one value. loop break not search for other.
             } 
         }
-        if (flag=true) System.out.print(" Get the element 45");  
+        if (flag=true) System.out.println(" Get the element: 45 ");  
         else System.out.println("No Element Found.");
     }   
     
