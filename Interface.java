@@ -14,7 +14,7 @@ class UPI implements Payment {
     }
 }
 
-public class Main {
+public class Interface {
     public static void main(String[] args) {
         Payment p1 = new CreditCard();
         p1.makePayment(1000);

@@ -22,7 +22,7 @@ class Cat extends Animal {
     }
 }
 
-public class Main {
+public class AbstractClass {
     public static void main(String[] args) {
         // Animal a = new Animal(); ❌ Not allowed
 

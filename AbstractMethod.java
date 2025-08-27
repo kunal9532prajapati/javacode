@@ -7,7 +7,7 @@ abstract class Payment {
         System.out.println("Payment completed successfully!");
     }
 }
-
+@Override
 class CreditCardPayment extends Payment {
     void makePayment(double amount) {
         System.out.println("Paid " + amount + " using Credit Card");
@@ -20,7 +20,7 @@ class UpiPayment extends Payment {
     }
 }
 
-public class Main {
+public class AbstractMethod {
     public static void main(String[] args) {
         Payment p1 = new CreditCardPayment();
         p1.makePayment(1000);

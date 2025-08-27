@@ -13,7 +13,7 @@ public class PalindromeSubstring {
     }
 
     public static void main(String[] args) {
-        String testString = "ababa";
+        String testString = "abcba";
         int count = 0;
         for(int i=0; i<testString.length(); i++) {
             for(int j=i+1; j<=testString.length(); j++) {
@@ -27,3 +27,4 @@ public class PalindromeSubstring {
         System.out.println("Total palindrome substrings: " + count);
     }
 }
+ 
