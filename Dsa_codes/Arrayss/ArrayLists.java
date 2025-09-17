@@ -44,8 +44,10 @@ public class ArrayLists{
 
     arr.add(2,999); // insert at index 2
 
+    System.out.println(arr); 
+
     arr.remove(arr.size() - 1);// [ 10,16,999,145,155,103,999]
-    System.out.println(arr);  // [ 10,16,999,145,155,103]
+    System.out.println("removed: " + arr );  // [ 10,16,999,145,155,103]
 
     Collections.reverse(arr); //[103, 155, 145, 50, 999, 16, 10]
     System.out.println(arr);
